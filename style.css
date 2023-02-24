@@ -16,9 +16,14 @@ body {
     margin: 0;
 }
 
+h1,h2,h3,h4,p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     transition: color .3s;
+    color: black;
 }
 
 img {
@@ -72,7 +77,6 @@ img {
 }
 
 .hebergement-search h1 {
-    margin: 0;
     font-size: 1.375rem;
     font-weight: 700;
 }
@@ -124,6 +128,7 @@ img {
 .hebergement-filters {
     margin-top: 33px;
     display: flex;
+    align-items: center;
 }
 
 .hebergement-filters-title {
@@ -135,10 +140,31 @@ img {
 .hebergement-filters-items {
     display: flex;
     align-items: center;
-    margin: 0 15px;
+    margin-left: 30px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 0 20px;
+    padding: 14px 20px;
+}
+
+@media only screen and (max-width: 1049px) {
+    html {
+        font-size: 14px;
+    }
+    .hebergement-filters-items {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 913px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 854px) {
+    .hebergement-filters-items {
+        padding: 0 9px;
+    }
 }
 
 .hebergement-filters-items:hover {
@@ -170,6 +196,68 @@ img {
 .information p {
     margin-left: 11px;
 }
+
+.hebergement-city {
+    margin-top: 39px;
+    display: flex;
+}
+
+.card-hebergement-city {
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 42px 40px;
+}
+
+.card-hebergement-city-title {
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+
+.card-hebergement-city-parent-items {
+    margin-top: 23px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 31px;
+}
+
+.card-hebergement-city-items {
+    width: 246px;
+    height: 199px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.card-hebergement-city-items img {
+    height: 124px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-hebergement-city-items-informations {
+    padding: 0px 26px 0px 16px;
+}
+
+.card-hebergement-city-items-informations-title {
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.card-hebergement-city-items-informations-price {
+    margin-top: 9px;
+    font-size: 0.875rem;
+    line-height: 16px;
+}
+
+.card-hebergement-city-items-informations-price span {
+    font-weight: 700;
+}
+
+.stars {
+    margin-top: 9px;
+}
+
+
 
 
 
