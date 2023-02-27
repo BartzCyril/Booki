@@ -14,6 +14,7 @@ html {
 body {
     color: black;
     margin: 0;
+    background-color: white;
 }
 
 h1,h2,h3,h4,p {
@@ -39,7 +40,7 @@ img {
     padding-right: 77px;
 }
 
-.nav-main {
+.header-main-nav {
     display: flex;
     justify-content: space-between;
 }
@@ -49,18 +50,18 @@ img {
     height: 19px;
 }
 
-.nav-main-item a {
+.header-main-nav-item a {
     margin-left: 67px;
     color: black;
 }
 
-.nav-main-item a:hover {
+.header-main-nav-item a:hover {
     font-weight: 500;
     color: #0065FC;
     position: relative;
 }
 
-.nav-main-item a:hover::before {
+.header-main-nav-item a:hover::before {
     content: '';
     display: inline-block;
     position: absolute;
@@ -150,7 +151,7 @@ img {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     padding: 14px 20px;
-}
+} 
 
 .hebergement-filters-items:hover {
     background: #DEEBFF;
@@ -198,6 +199,18 @@ img {
 .hebergement-city-title {
     font-weight: 700;
     font-size: 1.375rem;
+}
+
+.card-hebergement-city-show-more {
+    display: inline-block;
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 21px;
+}
+
+.card-hebergement-city-show-more:hover {
+    text-decoration: underline;
 }
 
 .card-hebergement-city-parent-items {
@@ -290,6 +303,48 @@ img {
     margin-top: auto;
 }
 
+.section-activity {
+    margin-top: 60px;
+}
+
+.section-activity-title {
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 26px;
+}
+
+.card-activity-parent-items {
+    margin-top: 18.47px;
+    display: flex;
+    column-gap: 43px;
+}
+
+.card-activity-items {
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+    height: 445px;
+}
+
+.card-activity-items-img {
+    width: 302px;
+    height: 389px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-activity-items-city {
+    background: #F2F2F2;
+    border-radius: 0px 0px 20px 20px;
+    height: 52px;
+}
+
+.card-activity-items-city p {
+    font-weight: 700;
+    line-height: 19px;
+    padding-left: 19px;
+    padding-top: 20px;
+}
+
 @media only screen and (max-width: 1420px) {
     .hebergement-city {
         flex-direction: column;
@@ -317,6 +372,27 @@ img {
     .card-hebergement-city-popular-items .card-hebergement-items-informations {
         padding: 8px 6px 0px 10px;
     }
+    .card-activity-parent-items {
+        column-gap: 50px;
+        row-gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-activity-items {
+        width: 182px;
+        height: 267px;
+    }
+    .card-activity-items-img {
+        width: 182px;
+        height: 211px;
+    }
+    .card-activity-items-city {
+        height: 56px;
+    }
+    .card-activity-items-city p {
+        padding-top: 33%;
+        transform: translate(0, -50%);
+    }
 }
 
 @media only screen and (max-width: 959px) {
@@ -330,29 +406,44 @@ img {
     }
 }
 
-/**@media only screen and (max-width: 959px) {
-    .card-hebergement-city-parent-items {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card-hebergement-city-popular-parent-items {
-        flex-direction: column;
-    }
-    .card-hebergement-city-popular {
-        width: 375px;
-        height: 580px;
-        padding: 28px 21px 47px 20px;
-        margin-top: 17px;
-    }
-    .card-hebergement-city-popular-items img {
-        width: 137px;
-        height: 144px;
-    }
-    .card-hebergement-city-popular-items {
-        width: 334px;
-        height: 144px;
-        margin-right: 0px;
-    }
-}**/
+.main-footer {
+    margin-top: 61px;
+    width: 100%;
+    height: 225px;
+    background: #F2F2F2;
+    padding-top: 45px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-footer-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-footer-items-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 21px;
+}
+
+.main-footer-items-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.main-footer-items-links a {
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.main-footer-items-links a:hover {
+    text-decoration: underline;
+}
+
 
 
 
