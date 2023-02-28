@@ -6,5 +6,5 @@ Intégration d'une maquette "responsive" en HTML, CSS pour une entreprise qui so
 
 Maquette : https://www.figma.com/file/aen32jonHhD7JnIEL2b3sE/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?node-id=341%3A0&t=r4QoCDigrP141hQL-0
 
-Site Booki : 
+Site Booki : https://bartzcyril.github.io/Booki/
 
