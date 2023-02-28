@@ -204,7 +204,6 @@ img {
     border-radius: 20px;
     padding: 42px 40px;
     width: 880px;
-    height: 626px;
 }
 
 .hebergement-city-title {
@@ -270,7 +269,6 @@ img {
 
 .card-hebergement-city-popular {
     width: 420px;
-    height: 625px;
     background: #F2F2F2;
     border-radius: 20px;
     padding: 41px 40px 34px 37px;
@@ -338,7 +336,6 @@ img {
 }
 
 .card-activity-items-img {
-    width: 302px;
     height: 389px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -347,25 +344,31 @@ img {
     background: #F2F2F2;
     border-radius: 0px 0px 20px 20px;
     height: 52px;
+    position: relative;
 }
 
 .card-activity-items-city p {
     font-weight: 700;
     line-height: 19px;
-    padding-left: 19px;
-    padding-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
 }
 
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 1179px) {
     .hebergement-city {
         flex-direction: column;
+    }
+    .card-hebergement-city {
+        width: auto;
     }
     .card-hebergement-city-popular-parent-items {
         flex-direction: row;
         flex-wrap: wrap;
     }
     .card-hebergement-city-popular {
-        width: 883px;
+        width: auto;
         height: auto;
         padding: 34px 41px 48px 40px;
         margin-left: 0px;
@@ -376,9 +379,9 @@ img {
         height: 144px;
     }
     .card-hebergement-city-popular-items {
-        width: 252px;
         height: 144px;
         margin-right: auto;
+        width: 252px;
     }
     .card-hebergement-city-popular-items .card-hebergement-items-informations {
         padding: 8px 6px 0px 10px;
@@ -387,22 +390,15 @@ img {
         column-gap: 50px;
         row-gap: 50px;
         display: flex;
-        flex-wrap: wrap;
     }
     .card-activity-items {
-        width: 182px;
         height: 267px;
     }
     .card-activity-items-img {
-        width: 182px;
         height: 211px;
     }
     .card-activity-items-city {
         height: 56px;
-    }
-    .card-activity-items-city p {
-        padding-top: 33%;
-        transform: translate(0, -50%);
     }
 }
 
@@ -509,6 +505,9 @@ img {
     .form-div-search {
         display: flex;
     }
+    #form-city {
+        width: 100%;
+    }
     .hebergement-filters {
         margin-top: 34px;
         display: block;
@@ -521,7 +520,6 @@ img {
     }
     .hebergement-filters-items {
         margin-left: 0px;
-        width: 160px;
         height: 50px;
     }
     .hebergement-filters-items p {
@@ -542,11 +540,11 @@ img {
         width: 100vw;
     }
     .card-hebergement-city-popular-items {
-        width: 334px;
+        width: 100%;
         height: 144px;
     }
     .card-hebergement-city-popular-items img {
-        width: 137px;
+        width: 40%;
         height: 144px;
     }
     .card-hebergement-city {
@@ -565,11 +563,8 @@ img {
         height: 190px;
     }
     .card-activity-items-img {
-        width: 334px;
+        width: 100%;
         height: 134px;
-    }
-    .card-activity-items-city p {
-        padding-top: 15%;
     }
     .main-footer {
         flex-direction: column;
@@ -577,8 +572,19 @@ img {
         padding: 45px 154px 61px 30px;
         row-gap: 40px;
     }
+    .card-activity-parent-items {
+        flex-wrap: wrap;
+    }
+    .card-activity-items-city p {
+        font-size: 16px;
+    }
 }
 
+@media only screen and (max-width: 807px) {
+    .card-activity-items-city p {
+        font-size: 14px;
+    }
+}
 
 
 
