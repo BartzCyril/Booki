@@ -84,6 +84,8 @@ img {
 }
 
 .hebergement-search span {
+    display: block;
+    margin-top: 8px;
     line-height: 19px;
 }
 
@@ -247,6 +249,9 @@ img {
 }
 
 .card-hebergement-items-informations {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
     padding: 0px 26px 0px 16px;
 }
 
@@ -256,17 +261,12 @@ img {
 }
 
 .card-hebergement-items-informations-price {
-    margin-top: 8px;
     font-size: 0.875rem;
     line-height: 16px;
 }
 
 .card-hebergement-items-informations-price span {
     font-weight: 700;
-}
-
-.stars {
-    margin-top: 9px;
 }
 
 .card-hebergement-city-popular {
@@ -287,7 +287,7 @@ img {
     width: 137px;
     height: 144px;
     border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .card-hebergement-city-popular-parent-items {
@@ -303,8 +303,12 @@ img {
     border-radius: 20px;
 }
 
+.card-hebergement-city-popular-items .card-hebergement-items-informations-price {
+    margin-top: 7px;
+}
+
 .card-hebergement-city-popular-items .card-hebergement-items-informations {
-    width: 343px;
+    width: 206px;
     height: 144px;
     display: flex;
     flex-direction: column;
@@ -431,6 +435,7 @@ img {
 .main-footer-items {
     display: flex;
     flex-direction: column;
+    margin-right: auto;
 }
 
 .main-footer-items-title {
@@ -525,9 +530,13 @@ img {
     .hebergement-filters-items {
         margin-left: 0px;
         height: 50px;
+        width: calc(50% - 15px);
     }
     .hebergement-filters-items p {
         font-size: 11px;
+    }
+    .hebergement-filters-items svg {
+        flex-shrink: 0;
     }
     .information {
         padding-left: 20px;
@@ -553,9 +562,10 @@ img {
     }
     .card-hebergement-city {
         background-color: white;
+        padding: 28px 21px 47px 20px;
     }
     .card-hebergement-city-items {
-        width: 335px;
+        width: 100%;
         height: 199px;
     }
     .section-activity {
@@ -563,7 +573,7 @@ img {
         padding-right: 20px;
     }
     .card-activity-items {
-        width: 334px;
+        width: 100%;
         height: 190px;
     }
     .card-activity-items-img {
@@ -586,6 +596,15 @@ img {
 
 @media only screen and (max-width: 807px) {
     .card-activity-items-city p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .hebergement-filters-items p {
+        font-size: 7px;
+    }
+    .card-hebergement-items-informations-title {
         font-size: 14px;
     }
 }
