@@ -41,6 +41,18 @@ img {
     padding-right: 77px;
 }
 
+.stars {
+    font-size: 0.7rem;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color: #F2F2F2;
+}
+
 .header-main-nav {
     display: flex;
     justify-content: space-between;
@@ -140,10 +152,20 @@ img {
     display: none;
 }
 
+.form-div-search i {
+    color: white;
+}
+
 .hebergement-filters {
     margin-top: 33px;
     display: flex;
     align-items: baseline;
+}
+
+.hebergement-filters-items i {
+    font-size: 1.2rem;
+    color: #0065FC;
+    flex-shrink: 0;
 }
 
 .hebergement-filters-title {
@@ -193,6 +215,12 @@ img {
     border-radius: 100%;
 }
 
+.information-circle i {
+    font-size: 0.6rem;
+    color: #0065FC;
+}
+
+
 .information p {
     margin-left: 11px;
 }
@@ -235,11 +263,16 @@ img {
 }
 
 .card-hebergement-city-items {
-    width: 246px;
-    height: 199px;
+    width: 30%;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    position: relative;
+}
+
+.card-hebergement-city-items .stars {
+    position: absolute;
+    bottom: 1px;
 }
 
 .card-hebergement-city-items img {
@@ -251,8 +284,7 @@ img {
 .card-hebergement-items-informations {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
-    padding: 0px 26px 0px 16px;
+    padding: 0px 26px 10px 16px;
 }
 
 .card-hebergement-items-informations-title {
@@ -263,6 +295,7 @@ img {
 .card-hebergement-items-informations-price {
     font-size: 0.875rem;
     line-height: 16px;
+    margin: 10px 0;
 }
 
 .card-hebergement-items-informations-price span {
@@ -283,6 +316,10 @@ img {
     align-items: center;
 }
 
+.card-hebergement-city-popular-header i{
+    color: #0065FC;
+}
+
 .card-hebergement-city-popular-items img {
     width: 137px;
     height: 144px;
@@ -296,11 +333,14 @@ img {
 }
 
 .card-hebergement-city-popular-items {
-    display: flex;
     margin-top: 26px;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+}
+
+.card-hebergement-city-popular-items a {
+    display: flex;
 }
 
 .card-hebergement-city-popular-items .card-hebergement-items-informations-price {
@@ -364,12 +404,13 @@ img {
     transform: translate(0, -50%);
 }
 
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1024px) {
     .hebergement-city {
         flex-direction: column;
     }
     .card-hebergement-city {
         width: auto;
+        height: auto;
     }
     .card-hebergement-city-popular-parent-items {
         flex-direction: row;
@@ -383,17 +424,27 @@ img {
         margin-top: 53px;
     }
     .card-hebergement-city-popular-items img {
-        width: 106px;
-        height: 144px;
+        height: auto;
+        width: 40%;
     }
     .card-hebergement-city-popular-items {
-        height: 144px;
         margin-right: auto;
-        width: 252px;
+        width: 30%;
+        position: relative;
     }
+    .card-hebergement-city-popular-items a {
+        height: 100%;
+    }
+    .card-hebergement-city-popular-items .card-hebergement-items-informations .stars {
+        position: absolute;
+        bottom: 5px;
+        margin-bottom: 0;
+    }
+
     .card-hebergement-city-popular-items .card-hebergement-items-informations {
-        padding: 8px 6px 0px 10px;
+        padding: 12px 5px 12px 10px;
     }
+
     .card-activity-parent-items {
         column-gap: 50px;
         row-gap: 50px;
@@ -408,16 +459,8 @@ img {
     .card-activity-items-city {
         height: 56px;
     }
-}
-
-@media only screen and (max-width: 959px) {
-    .card-hebergement-city {
-        width: auto;
-        height: auto;
-    }
-    .card-hebergement-city-popular {
-        width: auto;
-        height: auto;
+    .card-hebergement-items-informations-price {
+        margin-top: 5px;
     }
 }
 
@@ -530,13 +573,12 @@ img {
     .hebergement-filters-items {
         margin-left: 0px;
         height: 50px;
-        width: calc(50% - 15px);
+        width: calc(50% - 7.5px);
+        padding: 13px 17px;
     }
     .hebergement-filters-items p {
         font-size: 11px;
-    }
-    .hebergement-filters-items svg {
-        flex-shrink: 0;
+        margin-left: 5px;
     }
     .information {
         padding-left: 20px;
@@ -594,20 +636,6 @@ img {
     }
 }
 
-@media only screen and (max-width: 807px) {
-    .card-activity-items-city p {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 330px) {
-    .hebergement-filters-items p {
-        font-size: 7px;
-    }
-    .card-hebergement-items-informations-title {
-        font-size: 14px;
-    }
-}
 
 
 
