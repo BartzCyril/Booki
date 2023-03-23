@@ -272,7 +272,7 @@ img {
 
 .card-hebergement-city-items .stars {
     position: absolute;
-    bottom: 1px;
+    bottom: 5px;
 }
 
 .card-hebergement-city-items img {
@@ -295,7 +295,7 @@ img {
 .card-hebergement-items-informations-price {
     font-size: 0.875rem;
     line-height: 16px;
-    margin: 10px 0;
+    margin: 5px 0 15px 0;
 }
 
 .card-hebergement-items-informations-price span {
@@ -425,7 +425,7 @@ img {
     }
     .card-hebergement-city-popular-items img {
         height: auto;
-        width: 40%;
+        width: 40.5%;
     }
     .card-hebergement-city-popular-items {
         margin-right: auto;
@@ -443,6 +443,8 @@ img {
 
     .card-hebergement-city-popular-items .card-hebergement-items-informations {
         padding: 12px 5px 12px 10px;
+        height: auto;
+        width: 60%;
     }
 
     .card-activity-parent-items {
